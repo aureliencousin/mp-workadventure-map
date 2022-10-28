@@ -6,7 +6,11 @@
     "dev": "vite",
     "start": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "update:map": "cp -R ~/workspace/guild/work-adventure-map/map.json .",
+    "update:tilesets": "cp -R ~/workspace/guild/work-adventure-map/tilesets/* ./tilesets",
+    "update:src": "cp -R ~/workspace/guild/work-adventure-map/src/* ./src",
+    "update": "npm run update:map && npm run update:tilesets && npm run update:src"
   },
   "devDependencies": {
     "@types/node": "^17.0.36",
